@@ -4,20 +4,21 @@
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  color: #111827;
-  background-color: #f6f2ea;
+  color: #18223d;
+  background-color: #eff4ff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   --surface: rgba(255, 255, 255, 0.92);
-  --line: rgba(17, 24, 39, 0.12);
-  --muted: #4b5563;
-  --accent: #ea580c;
-  --accent-ink: #7c2d12;
-  --shadow-md: 0 18px 40px rgba(15, 23, 42, 0.12);
-  --shadow-lg: 0 30px 60px rgba(15, 23, 42, 0.18);
+  --line: rgba(77, 86, 164, 0.14);
+  --muted: #58627d;
+  --ink: #202a52;
+  --accent: #09c7ff;
+  --accent-ink: #6f38d4;
+  --shadow-md: 0 18px 40px rgba(57, 69, 132, 0.14);
+  --shadow-lg: 0 30px 60px rgba(57, 69, 132, 0.2);
 }
 
 * {
@@ -27,16 +28,17 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at 15% 10%, rgba(255, 236, 200, 0.8), transparent 45%),
-    radial-gradient(circle at 85% 15%, rgba(200, 228, 255, 0.8), transparent 50%),
-    #f6f2ea;
+  background:
+    radial-gradient(circle at 16% 10%, rgba(111, 56, 212, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 14%, rgba(9, 199, 255, 0.22), transparent 26%),
+    linear-gradient(180deg, #f3f5ff 0%, #edf7ff 100%);
   color: inherit;
 }
 
 #root {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 3.5rem 1.6rem 2rem;
+  padding: 2rem 1.4rem;
 }
 
 h1,
@@ -44,7 +46,7 @@ h2,
 h3 {
   font-family: "Fraunces", "Times New Roman", serif;
   margin: 0;
-  color: #0f172a;
+  color: #202a52;
 }
 
 h1 {
@@ -71,4 +73,16 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 720px) {
+  #root {
+    padding: 1rem;
+  }
 }
